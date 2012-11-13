@@ -1,0 +1,29 @@
+[core]
+	autocrlf = true
+	whitespace = cr-at-eol
+[user]
+	name = Dusty Burwell
+   email = dusty.burwell@softekinc.com
+[alias]
+   co = checkout
+   ci = commit
+   st = status
+   br = branch
+   hist = log --pretty=format:\"%h %ad | %d %s [%an]\" --graph --date=short
+   type = cat-file -t
+   dump = cat-file -p
+[merge]
+   summary = true
+   tool = "p4merge"
+[mergetool "p4merge"]
+	cmd = p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[diff]
+	tool = p4merge
+[difftool "p4merge"]
+	cmd = p4merge \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	keepBackup = false
+[color]
+	ui = true

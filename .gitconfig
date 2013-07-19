@@ -1,9 +1,9 @@
 [core]
-	autocrlf = true
-	whitespace = cr-at-eol
+   autocrlf = true
+   whitespace = cr-at-eol
 [user]
-	name = Dusty Burwell
-   email = dusty.burwell@softekinc.com
+   name = Dusty Burwell
+   email = dustyburwell@gmail.com
 [alias]
    co = checkout
    ci = commit
@@ -16,14 +16,14 @@
    summary = true
    tool = "p4merge"
 [mergetool "p4merge"]
-	cmd = p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+   cmd = p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [diff]
-	tool = p4merge
+   tool = p4merge
 [difftool "p4merge"]
-	cmd = p4merge \"$LOCAL\" \"$REMOTE\"
+   cmd = p4merge \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+   prompt = false
 [mergetool]
-	keepBackup = false
+   keepBackup = false
 [color]
-	ui = true
+   ui = true
